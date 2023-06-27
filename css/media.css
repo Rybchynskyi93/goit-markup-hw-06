@@ -1,0 +1,23 @@
+/*! ---------M-O-B-I-L-E-----------------------------LET---------- */
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+}
+
+/*! -----------T-A-B-L-E-T------------- */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .advantages-list {
+  }
+  .advantages-item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/*! ----------------D-I-S-C-O-R-D------------- */
+@media screen and (min-width: 1158px) {
+}
