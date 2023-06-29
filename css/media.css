@@ -1,8 +1,9 @@
 /*! ---------M-O-B-I-L-E-----------------------------LET---------- */
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 428px;
+    max-width: 398px;
   }
+  /** ----TEAM---- */
 }
 
 /*! -----------T-A-B-L-E-T------------- */
@@ -16,8 +17,113 @@
     max-width: unset;
     width: calc((100% - 24px) / 2);
   }
+  /** ----TEAM---- */
+  .team-list {
+    gap: 64px 24px;
+  }
+  .team-item {
+    width: calc((100%-24px) / 2);
+  }
+  /** ---------CUSTOMERS------- */
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  /** -----------FOTER---------------- */
+  .footer-container {
+    display: block;
+    align-items: baseline;
+
+    /* width: calc((100% - 24) / 2); */
+  }
+  .footer-logo-container {
+    margin-right: 108px;
+  }
 }
 
 /*! ----------------D-I-S-C-O-R-D------------- */
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .advantages-list {
+    gap: 120px 24px;
+  }
+  .advantages-item {
+    width: unset;
+    width: calc((100% - 72px) / 4);
+  }
+  .advantages-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .advantages-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  /** ----PROJECT---- */
+  .project-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--main-text-color);
+    letter-spacing: 0.02em;
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .project-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+  }
+  .project-item {
+    background-color: var(--project-bacground-color);
+  }
+
+  /** -----TEAM------- */
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100%-72px) / 4);
+  }
+
+  /** -------CUSTOMERS------- */
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    display: flex;
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .customers-link:is(:hover, :focus) {
+    color: var(--hover-color-studio);
+    border-color: var(--hover-color-studio);
+  }
+
+  .customers-link:hover .customers-icon,
+  .customers-link:focus .customers-icon {
+    fill: #404bbf;
+  }
+  /* -----------FOOTER------------- */
 }
