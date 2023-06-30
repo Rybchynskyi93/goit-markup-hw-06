@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation list">
           <a class="header-logo link" href="./index.html"
@@ -62,18 +62,109 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+          <svg class="menu-open-icon" width="29" height="18">
+            <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="menu-mob">
+        <button type="button" class="close-menu-btn"></button>
+        <svg class="menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+        <ul class="menu-mob-list list">
+          <li class="menu-mob-item link">
+            <a class="menu-mob-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-mob-item link">
+            <a class="menu-mob-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-mob-item link">
+            <a class="menu-mob-link link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="menu-mob-contacts link">
+          <ul class="menu-mob-contacts-list list">
+            <li class="menu-mob-contacts-item link">
+              <a
+                class="menu-mob-contacts-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-mob-contacts-item link">
+              <a class="menu-mob-contacts-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              aria-label="facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              aria-label="linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-soc-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-content">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn hero-style-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="advantages">
         <div class="container advantages-container">
@@ -136,6 +227,7 @@
           <ul class="project-list list">
             <li class="project-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="display"
                 width="360"
@@ -144,6 +236,7 @@
             </li>
             <li class="project-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="phone"
                 width="360"
@@ -152,6 +245,7 @@
             </li>
             <li class="project-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="website"
                 width="360"
@@ -167,6 +261,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
                 src="./images/photo1.jpg"
                 alt="Mark Guerrero photo"
                 width="264"
@@ -230,6 +325,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x"
                 src="./images/photo2.jpg"
                 alt="Tom Ford photo"
                 width="264"
@@ -292,6 +388,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x"
                 src="./images/photo3.jpg"
                 alt="Camila Garcia photo"
                 width="264"
@@ -354,6 +451,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo4.jpg 1x, ./images/photo4-2x.jpg 2x"
                 src="./images/photo4.jpg"
                 alt="Daniel Wilson photo"
                 width="264"
@@ -560,7 +658,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -644,6 +742,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
