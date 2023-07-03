@@ -63,21 +63,23 @@
           </ul>
         </address>
         <button type="button" class="open-menu-btn js-open-menu">
-          <svg class="menu-open-icon" width="29" height="18">
+          <svg class="menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-icon-menu"></use>
           </svg>
         </button>
       </div>
 
       <div class="menu-mob js-menu-container">
+        <button type="button" class="close-menu-btn js-close-menu"></button>
+        <svg class="close-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
         <div>
-          <button type="button" class="close-menu-btn js-close-menu"></button>
-          <svg class="close-menu-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
           <ul class="menu-mob-list list">
             <li class="menu-mob-item link">
-              <a class="menu-mob-link link" href="./index.html">Studio</a>
+              <a class="menu-mob-link mob-current link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-mob-item link">
               <a class="menu-mob-link link" href="./portfolio.html"
@@ -90,10 +92,13 @@
           </ul>
         </div>
 
+        <div></div>
         <address class="menu-mob-contacts link">
           <ul class="menu-mob-contacts-list list">
             <li class="menu-mob-contacts-item link">
-              <a class="menu-mob-contacts-link link" href="tel:+110001111111"
+              <a
+                class="menu-mob-contacts-link acent link"
+                href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>

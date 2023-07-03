@@ -5,8 +5,10 @@
   }
   .header-container {
   }
-  .menu-mob {
+  .advantages-container {
+    /* max-width: 398px; */
   }
+
   /** ----TEAM---- */
 }
 
@@ -142,6 +144,7 @@
   .hero-title {
     font-size: 56px;
     line-height: 1.1;
+    max-width: 496px;
   }
   /** -------------ADVANTAGE------------ */
   .advantages-list {
