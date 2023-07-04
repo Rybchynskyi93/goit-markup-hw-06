@@ -1,4 +1,16 @@
-/*! ---------M-O-B-I-L-E-----------------------------LET---------- */
+/*! ---------M-O-B-I-L-E------------- */
+@media screen and (min-width: 320px) {
+  .container {
+    /* max-width: 398px; */
+  }
+  .acent {
+    font-size: 22px;
+  }
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
 @media screen and (min-width: 428px) {
   .container {
     /* max-width: 398px; */
@@ -108,7 +120,7 @@
   }
 
   .header-contacts-link {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     color: var(--second-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -120,13 +132,14 @@
   /** ---------HERO--------------------- */
   .hero {
     padding: 72px 0;
-    background-size: cover;
+
     background: var(--bacground-color);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-tab.jpg);
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -156,6 +169,9 @@
   .advantages-subtitle {
     text-align: start;
   }
+  .advantages-text {
+    font-weight: 400;
+  }
   /** ----TEAM---- */
   .team-list {
     gap: 64px 24px;
@@ -164,6 +180,10 @@
     width: calc((100%-24px) / 2);
   }
   /** ---------CUSTOMERS------- */
+  .customers-content {
+    max-width: 584px;
+  }
+
   .customers-list {
     gap: 72px 24px;
   }
@@ -353,9 +373,15 @@
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
+    margin-left: unset;
+    gap: unset;
   }
   .footer-logo-container {
-    margin-right: auto;
+    margin-right: 128px;
+  }
+
+  .footer-soc {
+    margin-right: 80px;
   }
   .footer-soc-link:hover {
     background-color: #31d0aa;
