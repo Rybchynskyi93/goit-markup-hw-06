@@ -153,6 +153,9 @@
     max-width: unset;
     width: calc((100% - 24px) / 2);
   }
+  .advantages-subtitle {
+    text-align: start;
+  }
   /** ----TEAM---- */
   .team-list {
     gap: 64px 24px;
@@ -194,6 +197,11 @@
   }
   .footer-bottom {
     align-items: baseline;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
 
@@ -308,7 +316,10 @@
   .team-item {
     width: calc((100%-72px) / 4);
   }
-
+  .soc-link:hover,
+  .soc-link:focus {
+    background-color: #404bbf;
+  }
   /** -------CUSTOMERS------- */
 
   .customers {
@@ -331,6 +342,7 @@
   .customers-link:focus .customers-icon {
     fill: #404bbf;
   }
+
   /* -----------FOOTER------------- */
   .footer {
     background-color: var(--bacground-color);
@@ -344,6 +356,12 @@
   }
   .footer-logo-container {
     margin-right: auto;
+  }
+  .footer-soc-link:hover {
+    background-color: #31d0aa;
+  }
+  .footer-soc-link:focus {
+    background-color: #31d0aa;
   }
 
   .footer-form {
